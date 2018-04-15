@@ -1,0 +1,29 @@
+
+*{
+	padding:0px;
+	margin:0px;
+}
+
+body{
+	height: auto;
+	width: 100%;
+	background: linear-gradient(75deg, #CAC7C8, #EAEAED);
+
+	padding-bottom: 100px; 
+	overflow: hidden;
+}
+
+#main{
+	background-color: white;
+    width: 1080px;
+    height: 500px;
+    border-radius: 10px;
+    margin: 80px auto;
+}
+#header{
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	padding-top: 30px;
+}
