@@ -9,10 +9,10 @@
 	<script>
 		function scrollRightt(){
 			//document.getElementById('content').scrollTop=980;
-			$('#content').animate({scrollTop: 980}, 1000);
+			$('#content').animate({scrollLeft: 2880}, 500);
 		}
 		function scrollLeftt(){
-			$('#content').animate({scrollTop: 0}, 1000);
+			$('#content').animate({scrollLeft: 0}, 500);
 		}
 	</script>
 </head>
@@ -30,17 +30,17 @@
 	    	</div>
 	    </div>
 
-		<div class="outer-container">
+		<!-- <div class="outer-container">
 			<div class="inner-container">
 		    	<div class="element" style="visibility:hidden">
-					<div><img class="imge" src="images/view-from-boat.jpg"/></div>
-					<div><img class="imge" src="images/over-the-mountain.jpg"/></div>
-					<div><img class="imge" src="images/yellow-cab-newyork.jpg"/></div>
-					<div><img class="imge" src="images/serenity.jpg"/></div>
-					<div><img class="imge" src="images/untrodden.jpg"/></div>
-					<div><img class="imge" src="images/jungfrau.jpg"/></div>
-					<div><img class="imge" src="images/hennessey-venom-f5.jpg"/></div>
-					<div><img class="imge" src="images/long-ride.jpg"/></div>
+					<div class="imge" src="images/view-from-boat.jpg"/></div>
+					<div class="imge" src="images/over-the-mountain.jpg"/></div>
+					<div class="imge" src="images/yellow-cab-newyork.jpg"/></div>
+					<div class="imge" src="images/serenity.jpg"/></div>
+					<div class="imge" src="images/untrodden.jpg"/></div>
+					<div class="imge" src="images/jungfrau.jpg"/></div>
+					<div class="imge" src="images/hennessey-venom-f5.jpg"/></div>
+					<div class="imge" src="images/long-ride.jpg"/></div>
 				</div>
 			</div>
 		</div>
@@ -54,20 +54,26 @@
 		    <div class="slide"><img class="img" src="images/jungfrau.jpg"/></div>
 		    <div class="slide"><img class="img" src="images/hennessey-venom-f5.jpg"/></div>
 		    <div class="slide"><img class="img" src="images/long-ride.jpg"/></div>
-		</div>
+		</div> -->
 
-		<img id="left" src="images/right.png" onclick="scrollLeftt()">
-		<div id="content" class="horizontal-scroll-wrapper" style="visibility:">
-			<div><img class="img" src="images/view-from-boat.jpg"/></div>
-			<div><img class="img" src="images/over-the-mountain.jpg"/></div>
-			<div><img class="img" src="images/yellow-cab-newyork.jpg"/></div>
-			<div><img class="img" src="images/serenity.jpg"/></div>
-			<div><img class="img" src="images/untrodden.jpg"/></div>
-			<div><img class="img" src="images/jungfrau.jpg"/></div>
-			<div><img class="img" src="images/hennessey-venom-f5.jpg"/></div>
-			<div><img class="img" src="images/long-ride.jpg"/></div>
+		<div class="scroller">
+			<div>
+				<div class="left" onclick="scrollLeftt()"></div>
+				<div id="content" class="horizontal-scroll-wrapper">
+					<div>
+						<div class="img" style="background: url(images/view-from-boat.jpg); background-size: cover; "></div>
+						<div class="img" style="background: url(images/over-the-mountain.jpg); background-size: cover; "></div>
+						<div class="img" style="background: url(images/yellow-cab-newyork.jpg); background-size: cover; "></div>
+						<div class="img" style="background: url(images/serenity.jpg); background-size: cover; "></div>
+						<div class="img" style="background: url(images/untrodden.jpg); background-size: cover; "></div>
+						<div class="img" style="background: url(images/jungfrau.jpg); background-size: cover; "></div>
+						<div class="img" style="background: url(images/hennessey-venom-f5.jpg); background-size: cover; "></div>
+						<div class="img" style="background: url(images/long-ride.jpg); background-size: cover; "></div>
+					</div>
+				</div>
+				<div class="right" onclick="scrollRightt()"></div>
+			</div>
 		</div>
-		<img id="right" src="images/right.png" onclick="scrollRightt()">
 	</div>
 </body>
 </html>
