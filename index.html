@@ -2,14 +2,72 @@
 <html>
 <head>
 	<title>Oxyvo</title>
-	<!--<link rel="icon" href="images/oxy-favicon.png" type="image/png" sizes="16x16"> -->
+	<link rel="icon" href="images/oxy2.png" type="image/png" sizes="16x16">
 	<link rel="stylesheet" type="text/css" href="style.css?ver.0.0.1"/> <!-- need to add timestamp to prevent CSS caching -->
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script>
+		function scrollRightt(){
+			//document.getElementById('content').scrollTop=980;
+			$('#content').animate({scrollTop: 980}, 1000);
+		}
+		function scrollLeftt(){
+			$('#content').animate({scrollTop: 0}, 1000);
+		}
+	</script>
 </head>
 <body>
 	<div id="main">
 		<div>
 			<p id="header">OXYVO</p>
 		</div>
+		<div class="block-container">
+			<div class="blocks">
+	        	<img class="pic" src="images/view-from-boat.jpg"/>
+	    	</div>
+	    	<div class="blocks">
+	        	<img class="pic" src="images/over-the-mountain.jpg"/>
+	    	</div>
+	    </div>
+
+		<div class="outer-container">
+			<div class="inner-container">
+		    	<div class="element" style="visibility:hidden">
+					<div><img class="imge" src="images/view-from-boat.jpg"/></div>
+					<div><img class="imge" src="images/over-the-mountain.jpg"/></div>
+					<div><img class="imge" src="images/yellow-cab-newyork.jpg"/></div>
+					<div><img class="imge" src="images/serenity.jpg"/></div>
+					<div><img class="imge" src="images/untrodden.jpg"/></div>
+					<div><img class="imge" src="images/jungfrau.jpg"/></div>
+					<div><img class="imge" src="images/hennessey-venom-f5.jpg"/></div>
+					<div><img class="imge" src="images/long-ride.jpg"/></div>
+				</div>
+			</div>
+		</div>
+
+		<div id="carousel" style="visibility:hidden">
+		    <div class="slide"><img class="img" src="images/view-from-boat.jpg"/></div>
+		    <div class="slide"><img class="img" src="images/over-the-mountain.jpg"/></div>
+		    <div class="slide"><img class="img" src="images/yellow-cab-newyork.jpg"/></div>
+		    <div class="slide"><img class="img" src="images/serenity.jpg"/></div>
+		    <div class="slide"><img class="img" src="images/untrodden.jpg"/></div>
+		    <div class="slide"><img class="img" src="images/jungfrau.jpg"/></div>
+		    <div class="slide"><img class="img" src="images/hennessey-venom-f5.jpg"/></div>
+		    <div class="slide"><img class="img" src="images/long-ride.jpg"/></div>
+		</div>
+
+		<img id="left" src="images/right.png" onclick="scrollLeftt()">
+		<div id="content" class="horizontal-scroll-wrapper" style="visibility:">
+			<div><img class="img" src="images/view-from-boat.jpg"/></div>
+			<div><img class="img" src="images/over-the-mountain.jpg"/></div>
+			<div><img class="img" src="images/yellow-cab-newyork.jpg"/></div>
+			<div><img class="img" src="images/serenity.jpg"/></div>
+			<div><img class="img" src="images/untrodden.jpg"/></div>
+			<div><img class="img" src="images/jungfrau.jpg"/></div>
+			<div><img class="img" src="images/hennessey-venom-f5.jpg"/></div>
+			<div><img class="img" src="images/long-ride.jpg"/></div>
+		</div>
+		<img id="right" src="images/right.png" onclick="scrollRightt()">
 	</div>
 </body>
 </html>
