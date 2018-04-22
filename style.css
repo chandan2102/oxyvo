@@ -108,12 +108,20 @@ body{
 	margin: 0px auto;
 }
 
+#bar{
+	width: 28px;
+	height: 0px;
+
+	border: 2px solid #252525;
+	margin: -30px auto 0px;
+}
+
 .menu{
 	width: auto;
 	height: 20px;
 
 	border: 0px solid red;	
-	margin: 20px auto 10px;
+	margin: 30px auto 10px;
 
 	text-align: center;
 }
