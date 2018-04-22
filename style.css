@@ -16,14 +16,150 @@ body{
 #main{
 	background-color: white;
     width: 1080px;
-    height: 500px;
+    height: 550px;
     border-radius: 10px;
-    margin: 80px auto;
+    margin: 40px auto;
+    position: relative; 
 }
 #header{
 	text-align: center;
 	font-family: sans-serif;
 	font-size: 25px;
 	font-weight: bold;
-	padding-top: 30px;
+	padding-top: 15px;
+}
+
+#logo{
+	vertical-align:top;
+	float:left;
+	width:50px;
+	height:40px;
+}
+
+#carousel {
+	position:absolute;
+	bottom:0;
+    width: 1060px;
+    height: 206px;
+    background-color: black;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space:nowrap;
+    padding-left: 20px;
+}
+
+#carousel .slide {
+    display: inline-block;
+    margin: 20px auto;
+    padding-right: 10px;
+}
+
+.img{
+	width:220px;
+	height:130px;
+	padding-top: 15px;
+}
+
+.arw{
+	color:white;
+}
+
+.horizontal-scroll-wrapper {
+  width: 200px;
+  height: 980px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(-90deg);
+  position:absolute;
+  top: -40px;
+  left: 440px;
+  background-color: black;
+}
+
+.horizontal-scroll-wrapper > div {
+  width: 160px;
+  height: 305px;
+  transform: rotate(90deg);
+  margin: -60px 0px 0px -60px;
+}
+
+#right{
+	position: absolute;
+	top: 450px;
+	right: 8px;
+	width: 35px;
+	height: 30px;
+	background-color: gray;
+}
+
+#left{
+	position: absolute;
+	top: 450px;
+	left: 8px;
+	width: 35px;
+	height: 30px;
+	-webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    background-color: gray;
+}
+
+.block-container{
+	height: 340px;
+	width: 100%;
+	text-align: center;
+	background-color: gray;
+}
+
+.blocks{
+    width: 470px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.pic{
+	height: 220px;
+	width: 450px;
+	 
+}
+
+
+.outer-container {
+ width: 1080px;
+ height: 200px;
+ top: -30px;
+ left: 0px;
+}
+ 
+.element{
+ width: 1080px;
+ height: 200px;
+ top: -30px;
+ left: 0px;
+ background-color: red;
+}
+
+.outer-container {
+ /*border: 1px solid;*/
+ position: relative;
+ overflow: hidden;
+ background-color: black;
+}
+ 
+.inner-container {
+ position: absolute;
+ left: 0;
+ overflow-x: hidden;
+ overflow-y: scroll;
+ transform: rotate(-90deg);
+}
+ 
+.inner-container::-webkit-scrollbar {
+ display: none;
+}
+
+.imge{
+/*width:220px;
+height:130px;
+padding-top: 15px;*/
+transform: rotate(90deg);
 }
